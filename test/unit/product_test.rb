@@ -18,7 +18,7 @@ class ProductTest < ActiveSupport::TestCase
   	assert (product.price).valid?
   end
   test "valid uniqueness" do
-  	product = Product.new( :description => "string", :image_url => "string", :price => 99 )
+  	product = Product.new( :description => "string", :image_url => "string", :price => 99)
   	product.title = products(:alice).title
   	assert !product.save
   end
