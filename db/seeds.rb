@@ -47,15 +47,3 @@ Product.create(	:title=>'The programming language Ruby',
 					Matsumoto life ...},
 				:image_url=>'/images/ruby.jpg',
 				:price=>99.99)
-
-Product.create(	:title=>'Capital',
-				:description=>%{
-					Love, prejudice and zombies},
-				:image_url=>'/images/capital.png',
-				:price=>99.99)
-
-Product.create(	:title=>'Capital',
-				:description=>%{
-					Love, prejudice and zombies},
-				:image_url=>'/images/capital.png',
-				:price=>99.99)
