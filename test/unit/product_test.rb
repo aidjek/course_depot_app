@@ -9,13 +9,13 @@ class ProductTest < ActiveSupport::TestCase
   test "validates price" do
   	product = Product.new(:title => "string", :description => "string", :image_url => "string")
   	product.price = 1
-  	assert (product.price).invalid?
+  	assert product.invalid?
   	product.price = -0.01
-  	assert (product.price).invalid?
+  	assert product.invalid?
   	product.price = 0.0
-  	assert (product.price).invalid?
+  	assert product.invalid?
   	product.price = 0.01
-  	assert (product.price).valid?
+  	assert product.valid?
   end
   test "valid uniqueness" do
   	product = Product.new( :description => "string", :image_url => "string", :price => 99)
