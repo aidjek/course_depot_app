@@ -21,14 +21,14 @@ Product.create(	:title=>'Alice in Wonderland',
 Product.create(	:title=>'War and Peace',
 				:description=>%{
 					Napoleon, Kutuzov and all during party on 1812},
-				:image_url=>'/images/capital.png',
+				:image_url=>'/images/war_and_peace.jpg',
 				:price=>150.5)
 
 Product.create(	:title=>'Hackers: heroes of the computer revolution',
 				:description=>%{
 					Who knows hackers than Steven Levy},
-				:image_url=>'/images/hackers.jpg'
-				:price=>40)
+				:image_url=>'/images/hackers.jpg',
+				:price=>40.0)
 
 Product.create(	:title=>'Code Complete',
 				:description=>%{
